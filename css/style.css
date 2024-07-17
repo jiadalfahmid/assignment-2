@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face {
+  font-family: "Miama";
+  src: url('../font/Miama-Regular.ttf');
+  src: url('../font/Miama-Regular.otf');
+  src: url('../font/Miama-Regular.woff');
+  src: url('../font/Miama-Regular.woff2');
+  
+}
+/* fonts imported */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
