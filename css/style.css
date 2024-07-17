@@ -5,7 +5,6 @@
   src: url('../font/Miama-Regular.otf');
   src: url('../font/Miama-Regular.woff');
   src: url('../font/Miama-Regular.woff2');
-  
 }
 /* fonts imported */
 *{
@@ -15,3 +14,300 @@
   font-family: "Inter", sans-serif;
 }
 
+body{
+  background-color: #000;
+}
+
+.container{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.background-color{
+  background: #ffffff1a;
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.display-flex{
+  display: flex;
+}
+
+.logo{
+  color: #e6533c;
+  font-size: 2.25rem;
+  line-height: 2.7rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.heading{
+  color: #fff;
+  font-size: 4.875rem;
+  line-height: 5.85rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.section-title{
+  color: #fff;
+  font-size: 3rem;
+  line-height: 3.6rem;
+  font-weight: 900;
+}
+
+.column-title{
+  color: #fff;
+font-size: 1.75rem;
+line-height: 2.1rem;
+font-weight: 900;
+}
+
+.description-text{
+  color: #ffffff80;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.01875rem;
+  margin-bottom: 2rem;
+}
+
+.btn1{
+  background: #e6533c;
+  border-radius: 2.625rem;
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.35rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border: 0.0625rem solid #e6533c;
+  cursor: pointer;
+}
+
+.btn2{
+  background: #000000;
+  border-radius: 2.625rem;
+  font-size: 1.125rem;
+  line-height: 1.35rem;
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border: 0.0625rem solid #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn1 a, .btn2 a{
+  background-color: transparent;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* global css ends */
+/* header section starts */
+header{
+  background:  linear-gradient(0.00deg, #111111,#6c6b6b38 100%), #000000;
+}
+/* nav section starts */
+.header nav{
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.375rem 0rem;
+}
+
+nav .hamburger-menu{
+  display: none;
+}
+
+nav ul{
+border: 1px solid #ffffff1a;
+border-radius: 2.4375rem;
+padding: 0.75rem 1.5rem 0.75rem 0.25rem;
+gap: 2.8rem;
+background-color: transparent;
+}
+
+nav ul #active{ 
+  background: #e6533c;
+  border-radius: 2.625rem;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+}
+
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.35rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* nav section ends */
+/* banner section starts */
+.banner{
+  justify-content: space-between;
+  align-items: center;
+}
+.banner .banner-text-container{
+  max-width: 50%;
+}
+
+.banner-text-container .miama{
+  font-family: "Miama";
+  font-weight: 400;
+}
+
+.banner .description-text{
+  font-size: 1rem;
+}
+
+.banner-text-container .buttons{
+  gap: .8rem;
+}
+
+.banner .banner-image-container{
+  max-width: 50%;
+  position: relative;
+}
+
+.banner-image-container .card1 , .card2{
+  background: #3030308a;
+  color: #fff;
+  border: 1px solid #ffffff1a;
+  border-radius: 0.75rem;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(10px);
+  padding: 1.25rem 1.5rem;
+}
+
+.card1{
+  position: absolute;
+  left: -6.25rem;
+  bottom: 4.375rem;
+}
+
+.card2{
+  position: absolute;
+  right: -4.666667rem;
+  top: 7.5rem;
+}
+
+.card1 h4{
+font-size: 1.5rem;
+font-weight: 900;
+letter-spacing: 0.01875rem;
+}
+.card1 .icon{
+  background-color: #e6533c;
+  border-radius: 50%;
+  padding: 10px 13px;
+}
+
+.banner-image-container p{
+  margin: 0;
+}
+
+.card2 h4{
+font-size: 2.5rem;
+}
+/* banner section ends */
+/* header section ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile responsive css starts */
+@media screen and (max-width:576px) {
+  .container{
+    max-width: 90%;
+  }
+
+  .heading{
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+    max-width: 80%;
+  }
+
+  .header nav ul{
+    display: none;
+  }
+
+  .header nav{
+    padding: 1.875rem 0rem;
+  }
+
+  nav .hamburger-menu{
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  .banner{
+    flex-direction: column;
+  }
+
+  .banner .banner-text-container, .banner .banner-image-container{
+    max-width: 100%;
+  }
+
+  .banner-text-container p{
+    max-width: 70%;
+  }
+
+  .btn1 .hidden{
+    display: none;
+  }
+
+  .banner-text-container .buttons {
+    gap: .4rem;
+  }
+
+  .banner-image-container{
+    margin-top: 3rem;
+  }
+  .card1{
+    left: 0rem;
+    bottom: 14.375rem;
+    transform: scale(.8);
+  }
+  
+  .card2{
+    right: -2rem;
+    top: 2.5rem;
+    transform: scale(.7);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+}
