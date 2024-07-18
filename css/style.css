@@ -12,6 +12,10 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
+
+    
+
+
 }
 
 body{
@@ -219,6 +223,31 @@ font-size: 2.5rem;
 }
 /* banner section ends */
 /* header section ends */
+/* habit section starts */
+
+.habit{
+  margin: 6.25rem auto;
+}
+
+.habit-title{
+  color: #ffffff;
+font-size: 1.125rem;
+font-weight: 600;
+line-height: 1.5rem;
+margin: 1.5rem auto .25rem;
+}
+
+.habit-images-container{
+  gap: 2.5rem;
+}
+
+.image-box .habit-image img{
+  width: 11.25rem;
+  height: 11.25rem;
+  border-radius: 50%;
+  border: 10px solid #111111;
+}
+/* habit section ends */
 
 
 
@@ -244,6 +273,11 @@ font-size: 2.5rem;
     font-size: 2.25rem;
     line-height: 2.7rem;
     max-width: 80%;
+  }
+
+  .section-title{
+    font-size: 2rem;
+    
   }
 
   .header nav ul{
@@ -294,6 +328,22 @@ font-size: 2.5rem;
     top: 2.5rem;
     transform: scale(.7);
   }
+
+  .habit {
+    margin: 0rem 1rem 4rem;
+}
+
+  .habit-images-container{
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image-box p{
+    max-width: 60%;
+    margin: 0rem auto 1.8rem;
+  }
+
+
 
 
 
