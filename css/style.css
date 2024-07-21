@@ -39,10 +39,6 @@ body{
   display: flex;
 }
 
-.hidden{
-  display: none;
-}
-
 .logo{
   color: #e6533c;
   font-size: 2.25rem;
@@ -69,9 +65,9 @@ body{
 
 .column-title{
   color: #fff;
-font-size: 1.75rem;
-line-height: 2.1rem;
-font-weight: 900;
+  font-size: 1.75rem;
+  line-height: 2.1rem;
+  font-weight: 900;
 }
 
 .description-text{
@@ -116,7 +112,7 @@ font-weight: 900;
 /* global css ends */
 /* header section starts */
 header{
-  background:  linear-gradient(0.00deg, #111111,#6c6b6b38 100%), #000000;
+  background:  linear-gradient(0.00deg, #000000,#6c6b6b38 100%), #000000;
 }
 /* nav section starts */
 .header nav{
@@ -236,10 +232,10 @@ font-size: 2.5rem;
 
 .habit-title{
   color: #ffffff;
-font-size: 1.125rem;
-font-weight: 600;
-line-height: 1.5rem;
-margin: 1.5rem auto .25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  margin: 1.5rem auto .25rem;
 }
 
 .habit-images-container{
@@ -271,7 +267,47 @@ margin: 1.5rem auto .25rem;
   display: none;
 }
 /* target section ends */
+/* calculator section starts */
 
+/* calculator section ends */
+/* team section starts */
+.team{
+  margin: 6.25rem auto;
+}
+.team .gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+.gallery .gallery-image{
+  position: relative;
+}
+
+.gallery-image img{
+  width: 19.6rem;
+  border-radius: 1rem;
+}
+
+.gallery-image .gallery-text{
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+  margin-bottom: -1.5rem;
+}
+
+.gallery-text .name{
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+}
+
+
+
+/* team section ends */
 
 
 
@@ -386,6 +422,14 @@ margin: 1.5rem auto .25rem;
   }
 
   .target .target-text-container button{
+    width: 100%;
+  }
+
+  .team .gallery{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gallery-image img{
     width: 100%;
   }
 
