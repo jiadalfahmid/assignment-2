@@ -274,12 +274,18 @@ font-size: 2.5rem;
 .team{
   margin: 6.25rem auto;
 }
+
+.team p{
+  max-width: 50rem;
+  margin: 0 auto 1.85rem;
+}
 .team .gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   padding: 1.25rem;
   border-radius: 1rem;
+  justify-content: space-around;
 }
 
 .gallery .gallery-image{
@@ -287,7 +293,7 @@ font-size: 2.5rem;
 }
 
 .gallery-image img{
-  width: 19.6rem;
+  width: 100%;
   border-radius: 1rem;
 }
 
@@ -339,6 +345,42 @@ font-size: 2.5rem;
   color: #ffffff80;
 }
 /* testimonial section ends */
+/* footer section starts */
+footer{
+  margin: 5rem 0 -30px;
+}
+
+.footer-col-container{
+  padding: 3.75rem 0rem;
+  display: grid;
+  grid-template-columns: 43% 15% 15%;
+  justify-content: space-between;
+  border-bottom: 2px solid #ffffff1a;
+}
+
+.footer-col-container .col1 h4{
+  font-size: 4.375rem;
+  margin-bottom: 1.125rem;
+}
+.footer-col-container h3{
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1.75rem;
+}
+
+.footer-col-container .col2 p a,.footer-col-container .col3 p a,
+footer>.container>p>a{
+  font-size: 1.125rem;
+  text-decoration: none;
+  color: #ffffff80;
+}
+
+footer>.container>p{
+  margin: 30px auto;
+}
+/* footer section ends */
 
 
 
@@ -457,6 +499,11 @@ font-size: 2.5rem;
 
   .team .gallery{
     grid-template-columns: repeat(1, 1fr);
+    gap: 1.25rem;
+  }
+
+  .gallery .mobile-none{
+    display: none;
   }
 
   .gallery-image img{
@@ -470,6 +517,11 @@ font-size: 2.5rem;
   .testimonial-container{
     padding: 3rem;
     
+  }
+
+  .footer-col-container{
+    grid-template-columns: 80%;
+    gap: 2%;
   }
 
 
