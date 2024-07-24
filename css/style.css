@@ -112,7 +112,7 @@ body{
 /* global css ends */
 /* header section starts */
 header{
-  background:  linear-gradient(0.00deg, #000000,#6c6b6b38 100%), #000000;
+  background: linear-gradient(180deg, #121212 0%, rgba(119, 119, 119, 0) 100%);
 }
 /* nav section starts */
 .header nav{
@@ -304,11 +304,41 @@ font-size: 2.5rem;
   line-height: 1.5rem;
   font-weight: 900;
 }
-
-
-
 /* team section ends */
+/* testimonial section starts */
+.testimonial{
+  background: url('../images/gym.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 120px;
+}
 
+.testimonial .testimonial-image-container img{
+  border-radius: 50%;
+  max-width: 6.25rem;
+  border: 5px solid #222222;
+  margin-bottom: 1.875rem;
+}
+
+
+.testimonial-container{
+  background-color: #11111196;
+  padding: 3.75rem 6.25rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.testimonial-text-container p{
+  font-size: 1.125rem;
+  color: #fff;
+  font-style: italic;
+}
+
+.testimonial-text-container .name{
+  color: #ffffff80;
+}
+/* testimonial section ends */
 
 
 
@@ -431,6 +461,15 @@ font-size: 2.5rem;
 
   .gallery-image img{
     width: 100%;
+  }
+
+  .testimonial{
+    padding: 1.25rem;
+  }
+
+  .testimonial-container{
+    padding: 3rem;
+    
   }
 
 
