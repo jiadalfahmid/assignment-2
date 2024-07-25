@@ -12,10 +12,6 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-
-    
-
-
 }
 
 body{
@@ -65,9 +61,10 @@ body{
 
 .column-title{
   color: #fff;
-  font-size: 1.75rem;
-  line-height: 2.1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 900;
+  margin-bottom: 1.75rem;
 }
 
 .description-text{
@@ -159,12 +156,13 @@ nav ul li a{
   justify-content: space-between;
   align-items: center;
 }
+
 .banner .banner-text-container{
   max-width: 50%;
 }
 
 .banner-text-container .miama{
-  font-family: "Miama";
+  font-family: "Miama", sans-serif;
   font-weight: 400;
 }
 
@@ -209,10 +207,11 @@ font-size: 1.5rem;
 font-weight: 900;
 letter-spacing: 0.01875rem;
 }
+
 .card1 .icon{
   background-color: #e6533c;
   border-radius: 50%;
-  padding: 10px 13px;
+  padding: 0.625rem 0.8125rem;
 }
 
 .banner-image-container p{
@@ -268,6 +267,68 @@ font-size: 2.5rem;
 }
 /* target section ends */
 /* calculator section starts */
+.calculator-text-container{
+  margin: 5rem 17.5rem;
+}
+
+.calculator-container{
+  padding: 3.75rem;
+}
+
+.chart-input{
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.chart table{
+  border-collapse: collapse;
+  margin-top: 4rem;
+}
+
+table tr td,
+table tr th{
+  padding: 1rem;
+  border: 1px solid #ffffff80;
+  text-align: left;
+  font-size: .875rem;
+}
+
+table tr th{
+  color: #fff;
+}
+
+table tr td{
+  color: #ffffff80;
+}
+
+.bmi-input{
+  max-width: 55%;
+}
+
+.bmi-input form input[type="text"],
+.bmi-input form select{
+  width: 47%;
+  width: calc(100%/2 - .8rem);
+  border: none;
+  border-radius: .5rem;
+  background: #ffffff1a;
+  padding: 0.75rem 1.25rem;
+  color: #ffffff99;
+  margin: 0 0.5rem 0.75rem 0;
+}
+
+.bmi-input form input::placeholder{
+  color: #ffffff99;
+}
+
+.bmi-input form select:hover{
+  background-color: #393939;
+}
+
+.bmi-input form .factor{
+  width:  calc(100% - .8rem);
+  margin-bottom: 2rem;
+}
 
 /* calculator section ends */
 /* team section starts */
@@ -279,6 +340,7 @@ font-size: 2.5rem;
   max-width: 50rem;
   margin: 0 auto 1.85rem;
 }
+
 .team .gallery{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -317,7 +379,7 @@ font-size: 2.5rem;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 120px;
+  padding: 7.5rem;
 }
 
 .testimonial .testimonial-image-container img{
@@ -327,18 +389,19 @@ font-size: 2.5rem;
   margin-bottom: 1.875rem;
 }
 
-
 .testimonial-container{
-  background-color: #11111196;
+  background-color: #ffffff1a;
   padding: 3.75rem 6.25rem;
   border-radius: 1rem;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .testimonial-text-container p{
   font-size: 1.125rem;
   color: #fff;
   font-style: italic;
+  font-weight: 500;
 }
 
 .testimonial-text-container .name{
@@ -347,13 +410,13 @@ font-size: 2.5rem;
 /* testimonial section ends */
 /* footer section starts */
 footer{
-  margin: 5rem 0 -30px;
+  margin: 5rem 0 -1.875rem;
 }
 
 .footer-col-container{
   padding: 3.75rem 0rem;
   display: grid;
-  grid-template-columns: 43% 15% 15%;
+  grid-template-columns: 43% 18% 18%;
   justify-content: space-between;
   border-bottom: 2px solid #ffffff1a;
 }
@@ -361,13 +424,6 @@ footer{
 .footer-col-container .col1 h4{
   font-size: 4.375rem;
   margin-bottom: 1.125rem;
-}
-.footer-col-container h3{
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  font-weight: 900;
-  margin-bottom: 1.75rem;
 }
 
 .footer-col-container .col2 p a,.footer-col-container .col3 p a,
@@ -378,21 +434,9 @@ footer>.container>p>a{
 }
 
 footer>.container>p{
-  margin: 30px auto;
+  margin: 1.875rem auto;
 }
 /* footer section ends */
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* mobile responsive css starts */
 @media screen and (max-width:576px) {
@@ -497,6 +541,31 @@ footer>.container>p{
     width: 100%;
   }
 
+  .chart table {
+    margin-top: 0rem;
+  }
+
+  .calculator-container{
+    padding: 2.625rem 0;
+  }
+
+  .calculator-text-container{
+    margin: 1.85rem auto;
+  }
+
+  .chart-input{
+    flex-direction: column;
+    gap: 2.625rem;
+  }
+
+  .bmi-input{
+    max-width: 100%;
+  }
+
+  .team{
+    margin: 3rem auto;
+  }
+
   .team .gallery{
     grid-template-columns: repeat(1, 1fr);
     gap: 1.25rem;
@@ -524,21 +593,4 @@ footer>.container>p{
     gap: 2%;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
 }

@@ -95,8 +95,62 @@
     </section>
     <!-- calculator section starts -->
     <section class="calculator">
-      <div class="container display-flex">
-
+      <div class="calculator-text-container container">
+        <h2 class="section-title">BMI Calculator</h2>
+        <p class="description-text">Easily track your health with our BMI Calculator. This tool helps you understand your body composition and guides you towards your fitness goals.</p>
+      </div>
+      <div class="calculator-container background-color">
+        <div class="container display-flex chart-input">
+          <div class="chart">
+            <h3 class="column-title">BMI Calculator Chart</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>BMI</th>
+                  <th>Weight Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Below 18.5</td>
+                  <td>Underweight</td>
+                </tr>
+                <tr>
+                  <td>18.5 - 24.9 </td>
+                  <td>Healthy</td>
+                </tr>
+                <tr>
+                  <td>25.0 - 29.9</td>
+                  <td>Overweight</td>
+                </tr>
+                <tr>
+                  <td>30.0 - and Above</td>
+                  <td>Obese</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="bmi-input">
+            <h3 class="column-title">Calculate your BMI</h3>
+            <p class="description-text">Simply input your height and weight to get an instant assessment of your Body Mass Index.</p>
+            <form action="">
+              <input type="text" placeholder="Height/cm" required>
+              <input type="text" placeholder="Weight/kg" required>
+              <input type="text" placeholder="Age" required>
+              <select>
+                <option value="Sex">Sex</option>
+                <option value="Sex">Male</option>
+                <option value="Sex">Female</option>
+              </select><br>
+              <select class="factor">
+                <option value="factor" class="factor">Select an activity factor</option>
+                <option value="factor" class="factor">Running</option>
+                <option value="factor" class="factor">Swimming</option>
+              </select><br>
+              <input class="btn1" type="button" value="Calculate">
+            </form>
+          </div>
+        </div>
       </div>
     </section>
     <!-- calculator section ends -->
@@ -175,17 +229,17 @@
             access to a gym. With hundreds of professional workouts.</p>
         </div>
         <div class="col2">
-          <h3>Get Started</h3>
+          <h3 class="column-title">Get Started</h3>
           <p class="description-text"><a href="#">Service</a></p>
           <p class="description-text"><a href="#">Contact Us</a></p>
           <p class="description-text"><a href="#">Affiliate Program</a></p>
           <p class="description-text"><a href="#">About Us</a></p>
         </div>
         <div class="col3">
-          <h3>Get Started</h3>
+          <h3 class="column-title">Get Started</h3>
           <p class="description-text"><a href="#">Fitness</a></p>
           <p class="description-text"><a href="#">Platform</a></p>
-          <p class="description-text"><a href="#">Workout Libary</a></p>
+          <p class="description-text"><a href="#">Workout Library</a></p>
           <p class="description-text"><a href="#">App Design</a></p>
         </div>
       </section>
